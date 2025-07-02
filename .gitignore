@@ -1,0 +1,22 @@
+# luarocks
+/luarocks
+/lua
+/lua_modules
+/.luarocks
+
+# common
+*.log
+*.tmp
+*.bak
+*.orig
+
+# ide
+.vscode/
+.idea/
+*.iml
+*.project
+*.settings/
+
+# os
+.DS_Store
+Thumbs.db
