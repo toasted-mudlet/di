@@ -129,7 +129,7 @@ If you create a new project based substantially on this dependency injection
 container, please consider adding the following attribution or similar for all 
 derived code:
 
-> This project is based on [Toasted DI Container](https://github.com/toasted-mudlet/di_container), originally
+> This project is based on [Toasted DI Container](https://github.com/toasted-mudlet/di-container), originally
 > licensed under the MIT License (see [LICENSE](LICENSE) for details). All
 > original code and documentation remain under the MIT License.
 
