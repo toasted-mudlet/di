@@ -1,22 +1,22 @@
-# luarocks
-/luarocks
-/lua
-/lua_modules
-/.luarocks
-
-# common
+# Common
 *.log
 *.tmp
 *.bak
 *.orig
 
-# ide
+# IDE
 .vscode/
 .idea/
 *.iml
 *.project
 *.settings/
 
-# os
-.DS_Store
-Thumbs.db
+# LuaRocks
+*.rock
+/luarocks
+/lua
+/lua_modules
+/.luarocks
+
+# LuaCov
+/luacov.*.out
