@@ -1,4 +1,4 @@
-std = "lua51+lua52"
+std = "lua51"
 color = true
 codes = true
 

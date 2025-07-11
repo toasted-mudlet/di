@@ -1,4 +1,6 @@
-local unpack = table.unpack or unpack
+local unpack = table.unpack or unpack -- luacheck: ignore 143 113
+-- 5.1 (W143) accessing undefined field unpack of global table
+-- 5.2 (W113) accessing undefined variable unpack
 
 --- A lightweight dependency injection container for Lua.
 -- Supports singleton instances, constructor injection, and circular dependency detection.
