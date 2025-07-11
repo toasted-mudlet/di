@@ -30,11 +30,9 @@ Or, if using a custom tree:
 luarocks install --tree=lua_modules toasted_di_container
 ```
 
-Then build your Mudlet package as usual.
-
 ## Usage
 
-After installing, require the DI container in your Mudlet package code:
+After installing, require the DI container in your Lua project:
 
 ```
 local DIContainer = require("toasted_di_container")
