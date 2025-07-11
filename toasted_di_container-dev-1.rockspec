@@ -23,6 +23,6 @@ build = {
     type = "builtin",
 
     modules = {
-        toasted_di_container = "src/di_container.lua"
+        toasted_di_container = "src/toasted_di_container.lua"
     }
 }

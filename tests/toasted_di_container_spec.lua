@@ -1,4 +1,4 @@
-local DIContainer = require "di_container"
+local DIContainer = require "toasted_di_container"
 
 describe("DIContainer", function()
     local container
