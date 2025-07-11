@@ -13,10 +13,9 @@ A lightweight dependency injection container.
 - **[Lua 5.1](https://www.lua.org/versions.html#5.1)** or higher (including LuaJIT)
 
 > **Note:**
-> This library uses unpack for argument unpacking. For compatibility, this 
-> library automatically uses table.unpack if available (Lua 5.2+), otherwise 
+> This library uses unpack for argument unpacking. For compatibility, this
+> library automatically uses table.unpack if available (Lua 5.2+), otherwise
 > falls back to the global unpack (Lua 5.1).
-
 
 ## Installation
 
@@ -38,6 +37,13 @@ After installing, require the DI container in your Lua project:
 local DIContainer = require("toasted_di_container")
 local container = DIContainer:new()
 ```
+
+> **To run the provided example:**  
+> From the project root, execute:
+> ```
+> lua examples/basic/main.lua
+> ```
+> This will demonstrate registering and resolving dependencies as described below.
 
 ### Example: Registering and resolving dependencies
 
@@ -124,7 +130,7 @@ end
 ## Attribution
 
 If you create a new project based substantially on this dependency injection
-container, please consider adding the following attribution or similar for all 
+container, please consider adding the following attribution or similar for all
 derived code:
 
 > This project is based on [Toasted DI Container](https://github.com/toasted-mudlet/di-container), originally
@@ -137,3 +143,4 @@ Copyright © 2025 github.com/toasted323
 
 This project is licensed under the MIT License.
 See [LICENSE](LICENSE) in the root of this repository for full details.
+```
