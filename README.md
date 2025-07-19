@@ -1,4 +1,4 @@
-# Toasted DI Container
+# Toasted DI
 
 A lightweight dependency injection container.
 
@@ -20,13 +20,13 @@ A lightweight dependency injection container.
 ## Installation
 
 ```
-luarocks install toasted_di_container
+luarocks install toasted_di
 ```
 
 Or, if using a custom tree:
 
 ```
-luarocks install --tree=lua_modules toasted_di_container
+luarocks install --tree=lua_modules toasted_di
 ```
 
 ## Usage
@@ -34,7 +34,7 @@ luarocks install --tree=lua_modules toasted_di_container
 After installing, require the DI container in your Lua project:
 
 ```
-local DIContainer = require("toasted_di_container")
+local DIContainer = require("toasted_di")
 local container = DIContainer:new()
 ```
 
@@ -133,7 +133,7 @@ If you create a new project based substantially on this dependency injection
 container, please consider adding the following attribution or similar for all
 derived code:
 
-> This project is based on [Toasted DI Container](https://github.com/toasted-mudlet/di-container), originally
+> This project is based on [Toasted DI](https://github.com/toasted-mudlet/di), originally
 > licensed under the MIT License (see [LICENSE](LICENSE) for details). All
 > original code and documentation remain under the MIT License.
 

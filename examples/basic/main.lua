@@ -1,6 +1,6 @@
 package.path = "./examples/basic/?.lua;./src/?.lua;" .. package.path
 
-local DIContainer = require("toasted_di_container")
+local DIContainer = require("toasted_di")
 
 local UserRepository = require("examples.basic.UserRepository")
 local ListUsersUsecase = require("examples.basic.ListUsersUsecase")

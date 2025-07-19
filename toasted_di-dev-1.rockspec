@@ -1,4 +1,4 @@
-package = "toasted_di_container"
+package = "toasted_di"
 version = "dev-1"
 
 source = {
@@ -11,7 +11,7 @@ description = {
     detailed = [[
         A lightweight dependency injection container for constructor-based injection and singleton management.
     ]],
-    homepage = "https://github.com/toasted-mudlet/di_container",
+    homepage = "https://github.com/toasted-mudlet/di",
     license = "MIT"
 }
 
@@ -23,6 +23,6 @@ build = {
     type = "builtin",
 
     modules = {
-        toasted_di_container = "src/toasted_di_container.lua"
+        toasted_di = "src/toasted_di.lua"
     }
 }
