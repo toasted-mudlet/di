@@ -1,17 +1,17 @@
 --- A lightweight dependency injection container for Lua.
 -- Supports singleton instances, constructor injection, and circular dependency detection.
--- @classmod toasted_di
+-- @classmod toasted_di.Container
 
 local unpack = table.unpack or unpack -- luacheck: ignore 143 113
 -- 5.1 (W143) accessing undefined field unpack of global table
 -- 5.2 (W113) accessing undefined variable unpack
 
-local DIContainer = {}
-DIContainer.__index = DIContainer
+local Container = {}
+Container.__index = Container
 
 --- Creates a new DI container instance.
--- @treturn DIContainer A new container instance
-function DIContainer:new()
+-- @treturn Container A new container instance
+function Container:new()
     local instance = setmetatable({
         dependencies = {},
         instances = {}
@@ -25,7 +25,7 @@ end
 -- @tparam function dependency.constructor Factory function that creates the instance
 -- @tparam[opt] table dependency.dependencies Array of dependency names required by the constructor
 -- @raise Error if `dependency` is not a table or missing a constructor function
-function DIContainer:register(name, dependency)
+function Container:register(name, dependency)
     if type(dependency) ~= "table" then
         error("Dependency must be a table")
     end
@@ -40,7 +40,7 @@ end
 -- @tparam[opt] table stack Internal tracking for circular dependency detection
 -- @treturn any The resolved dependency instance
 -- @raise Error if dependency is not registered or if a circular dependency is detected
-function DIContainer:resolve(name, stack)
+function Container:resolve(name, stack)
     stack = stack or {}
 
     if stack[name] then
@@ -74,4 +74,4 @@ function DIContainer:resolve(name, stack)
     return instance
 end
 
-return DIContainer
+return Container

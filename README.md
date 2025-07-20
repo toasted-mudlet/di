@@ -34,8 +34,8 @@ luarocks install --tree=lua_modules toasted_di
 After installing, require the DI container in your Lua project:
 
 ```
-local DIContainer = require("toasted_di")
-local container = DIContainer:new()
+local Container = require("toasted_di").Container
+local container = Container:new()
 ```
 
 > **To run the provided example:**  

@@ -1,10 +1,10 @@
-local DIContainer = require "toasted_di"
+local Container = require "toasted_di".Container
 
 describe("DIContainer", function()
     local container
 
     before_each(function()
-        container = DIContainer:new()
+        container = Container:new()
     end)
 
     it("should create a new instance", function()

@@ -1,11 +1,15 @@
-package.path = "./examples/basic/?.lua;./src/?.lua;" .. package.path
+package.path =
+    "./examples/basic/?.lua;" ..
+    "./src/?.lua;" ..
+    "./src/?/init.lua;" ..
+    package.path
 
-local DIContainer = require("toasted_di")
+local Container = require("toasted_di").Container
 
 local UserRepository = require("examples.basic.UserRepository")
 local ListUsersUsecase = require("examples.basic.ListUsersUsecase")
 
-local container = DIContainer:new()
+local container = Container:new()
 
 container:register("userRepository", {
     constructor = function()
